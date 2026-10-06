@@ -30,6 +30,7 @@ public class TorpedoStore {
 
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
+      //megcsináltam a hibát, hogy ha a szám kisebb mint 1 vagy nagyobb mint a torpedók száma, akkor dobjon egy IllegalArgumentException-t
       throw new IllegalArgumentException("numberOfTorpedos");
     }
 
